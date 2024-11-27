@@ -28,25 +28,25 @@ body {
 .navbar > * {
     display: flex;
     align-items: center;
-    margin: 0 15px; /* Space between navbar items */
+    margin: 0 15px; 
 }
 
 .menu-toggle {
     font-size: 24px;
     cursor: pointer;
-    margin-right: auto; /* Pushes other items to the right */
+    margin-right: auto; 
 }
 
 .food {
     font-size: 24px;
-    margin: 0 auto; /* Center the title */
+    margin: 0 auto; 
 }
 
 .mail-link {
     text-decoration: none;
     color: #333;
     font-size: 18px;
-    margin-left: auto; /* Pushes mail to the far right */
+    margin-left: auto; 
 }
 
 /* Adjust main content to account for fixed navbar */
@@ -57,7 +57,6 @@ body {
     padding: 20px;
 }
 
-/* Rest of the CSS remains the same as in your original stylesheet */
 .post {
     text-align: center;
     padding: 2%;
