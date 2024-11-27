@@ -1,112 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Food Blog</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./styeel.css">
+    <link rel="stylesheet" href="./styeel.css">
 </head>
-
 <body>
-    <!-- Sidebar (hidden by default) -->
-    <nav class="navbar"Style="display:none; z-index: width; 40%; min-index: 300px;" id="mysidedbar">
-        <a href="javascript:void(0)" id="logo">
-            <i class="fa-solid fa-bars"></i>
-            <a href="javascript:void(0)" onclick="w3_close()" class="">Close Menu</a>
-            <a href="#food" onclick="w3_close()" class="">Food</a>
-            <a href="#about" onclick="w3_close()" class="">About</a>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="menu-toggle" >&#9776;</div>
+        <h1 class="food">My Food</h1>
+       <h1><a href="#" class="mail-link">Mail</a></h1>
     </nav>
-
-    <!-- Main Content -->
-    <div class="menu-bar">
-        <h1>My Food Blog</h1>
-        <!-- <span>Contact: example@mail.com</span> -->
-         <span>menu</span>
-    </div>
-
-    <div class="overlay">
-        <!-- Sandwich Section -->
-        <div class="food" id="sandwich">
-            <img src="./image/sandwich.jpg" alt="A NY Style Sandwich">
-            <figcaption>The Perfect Sandwich, A Real NY Style Classic</figcaption>
+    <!-- main -->
+    <section class="main">
+        <div class="post">
+            <img src="./image/sandwich.jpg" alt="The Perfect Sandwich">
+            <h2>The Perfect Sandwich, A Real NYC Classic</h2>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum.</p>
+        </div>
+        <div class="post">
+            <img src="./image/steak.jpg" alt="Steak">
+            <h2>Let Me Tell You About This Steak</h2>
+            <p>Once again, some random text lorem ipsum praesent tincidunt.</p>
+        </div>
+        <div class="post">
+            <img src="./image/steak.jpg" alt="Cherries">
+            <h2>Cherries, Interrupted</h2>
+            <p>Lorem ipsum text praesent tincidunt ipsum. What else?</p>
+        </div>
+        <div class="post">
+            <img src="./image/wine.jpg" alt="Wine and Pasta">
+            <h2>Once Again, Robust Wine and Vegetable Pasta</h2>
+            <p>Lorem ipsum text praesent tincidunt ipsum.</p>
+        </div>
+        <div class="post">
+            <img src="./image/popsicle.jpg" alt="Popsicle">
+            <h2>All I Need Is a Popsicle</h2>
+            <p>Lorem ipsum text praesent tincidunt ipsum.</p>
+        </div>
+        <div class="post">
+            <img src="./image/salmon.jpg" alt="Salmon">
+            <h2>Salmon For Your Skin</h2>
+            <p>Once again, some random text lorem ipsum praesent tincidunt.</p>
+        </div>
+        <div class="post">
+            <img src="./image/sandwich.jpg" alt="French Bread">
+            <h2>The Perfect Sandwich, A Real Classic</h2>
             <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
         </div>
-
-        <!-- Steak Section -->
-        <div>
-            <img src="./image/steak.jpg" alt="Juicy Steak">
-            <figcaption>Let Me Tell You About This Steak</figcaption>
-            <p>Once again, some random text to lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        <div class="post">
+            <img src="./image/cherries.jpg" alt="French Bread">
+            <h2>Le French</h2>
+            <p>Lorem ipsum text praesent tincidunt ipsum.</p>
         </div>
-
-        <!-- Cherries Section -->
-        <div>
-            <img src="./image/cherries.jpg" alt="A Bowl of Cherries">
-            <figcaption>Cherries, Interrupted</figcaption>
-            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-            <p>What else?</p>
-        </div>
-
-        <!-- Wine and Pasta Section -->
-        <div>
-            <img src="./image/wine.jpg" alt="Wine and Pasta">
-            <figcaption>Robust Wine and Vegetable Pasta</figcaption>
-            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-            <p>What else?</p>
-        </div>
-
-        <!-- Popsicle Section -->
-        <div>
-            <img src="./image/popsicle.jpg" alt="Colorful Popsicles">
-            <figcaption>All I Need Is a Popsicle</figcaption>
-            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-        </div>
-
-        <!-- Salmon Section -->
-        <div>
-            <img src="./image/salmon.jpg" alt="Grilled Salmon">
-            <figcaption>Salmon For Your Skin</figcaption>
-            <p>Once again, some random text to lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-        </div>
-
-        <!-- Croissant Section -->
-        <div>
-            <img src="./image/croissant.jpg" alt="French Croissant">
-            <figcaption>Le French Croissant</figcaption>
-            <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-            <p>What else?</p>
-        </div>
+    </section>
+    <!-- Pagination -->
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">&raquo;</a>
     </div>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container1">
-            <h3>Footer</h3>
-            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
-                gravida diam non fringilla.</p>
-            <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3.css</a>
-            <p>Powered by My Food Blog</p>
-
-            <!-- Blog Posts Section -->
-            <div class="container2">
-                <h4>Blog Posts</h4>
-                <div>
-                    <img src="./image/workshop.jpg" alt="Cooking Workshop" class="workshop">
-                    <p>Lorem ipsum</p>
-                    <p>Sed mattis nunc</p>
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Me, The Food Man</h2>
+        <img src="./image/chef.jpg" alt="Chef">
+        <p><strong>I am Who I Am!</strong></p>
+        <p>With passion for real, good food.</p>
+        <p>Just me, myself and I, exploring the universe of unknown. I have a heart of love and an interest in sharing food stories with you.</p>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Powered by <a href= https://www.w3schools.com/w3css/default.asp>W3.CSS</a></p>
+            <div class="footer-links">
+                <div class="blog-posts">
+                    <h3>Blog Posts</h3>
+                    <p>Lorem - Sed mattis nunc</p>
+                    <p>Ipsum - Praes tinci sed</p>
                 </div>
-                <div>
-                    <img src="./image/gondol.jpg" alt="Gondola in Italy" class="gravida">
-                    <p>Ipsum lorem</p>
-                    <p>Praesent tincidunt</p>
+                <div class="tags">
+                    <h3>Popular Tags</h3>
+                    <p>Travel, New York, Dinner, Salmon, France, Drinks</p>
                 </div>
             </div>
         </div>
     </footer>
 </body>
-
 </html>

@@ -1,0 +1,121 @@
+/* /* Global Styles 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 50px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width:1200px;
+   
+    
+   
+}
+section{
+    margin-top: 10%;
+}
+
+.menu-toggle{
+font-size: 24px;
+}
+
+.food, .mail-link {
+    font-size: 24px;
+}
+
+.mail-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px;
+  
+}
+
+.post {
+    text-align: center;
+    padding: 2%;
+    
+}
+
+.post img {
+    width: 272px;
+    height: 350px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.post p {
+    color: #666;
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination .active {
+    font-weight: bold;
+}
+
+.about {
+    text-align: center;
+    padding: 20px;
+}
+
+.about img {
+    width: 500px;
+    height: 400px;
+}
+
+footer {
+    background-color: white;
+    color: #171717;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links div {
+    text-align: left;
+}
+
+.footer-links h3 {
+    margin-bottom: 10px;
+}
