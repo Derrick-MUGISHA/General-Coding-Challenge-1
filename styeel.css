@@ -13,9 +13,16 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: center; /* Center the entire navbar */
-    align-items: center;
+    justify-content: space-between; /* Center the entire navbar */
+    padding-left: 20px;
+    padding-right: 20px;
     padding: 10px;
+    align-items: center;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 3rem;
+    padding-right: 3rem;    
     background-color: white;
     position: fixed;
     top: 0;
@@ -107,30 +114,51 @@ footer {
     text-align: center;
     padding: 20px;
 }
-
-.footer-content {
+.footer-content{
+    background: #6e6e6e;    
+    display:flex;
+}
+.one{
+    border: 2px solid red;
+    width: 33%;
+}
+.two{
+    border: 2px solid green;
+    width: 33%;
+}
+.three{
+    border: 2px solid blue;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 33%;
+}
+.child{
+    background: #9b9b9b;
+    display: flex;
+    gap: 10px;
+    align-items: center;
     padding: 20px;
 }
-
-.footer-content h2 {
-    font-size: 24px;
-    line-height: 36px;
-    display: block;
-    box-sizing: border-box;
-    margin: 10px 0 10px 0;
-}
-
-.footer-links {
+.gra-child{
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    align-items: flex-start;
 }
-
-.footer-links div {
-    text-align: left;
+.child img{
+    width: 10%;
+    height: 10%;
 }
-
-.footer-links h3 {
-    margin-bottom: 10px;
+.tags{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+}
+.tags p{
+    width: 15px;
+}
+.three p{
+    padding: 3px;
+    background: #818181;
+    width: 15%;
 }

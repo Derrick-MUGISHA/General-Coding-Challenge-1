@@ -10,11 +10,15 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <div class="navbar">
         <div class="menu-toggle">&#9776;</div>
-        <h1 class="food">My Food</h1>
-        <h1><a href="#" class="mail-link">Mail</a></h1>
-    </nav>
+        <div>
+            <h1 class="food">My Food</h1>
+        </div>
+        <a href="#" class="mail-link">
+            <h1>Mail</h1>
+        </a>
+    </div>
 
     <!-- Main Content -->
     <main class="main">
@@ -84,26 +88,33 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <h2>FOOTER</h2>
-            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
-                congue gravida diam non fringilla</p>
-            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">W3.CSS</a></p>
-            
-            <div class="footer-links">
-                <div class="blog-posts">
-                    <h3>Blog Posts</h3>
-                    <img src="image/workshop.jpg" alt="Workshop">
-                    <p>Lorem - Sed mattis nunc</p>
-                    <img src="image/gondol.jpg" alt="Restaurant">
-                    <p>Ipsum - Praes tinci sed</p>
+    <footer class="footer-content">
+        <div class="one">
+            <h1>FOOTER</h1>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="two">
+            <h1>BLOG POST</h1>
+            <div class="child">
+                <img src="./image/gondol.jpg" alt="">
+                <div class="gra-child">
+                    <p>Lorem</p>
+                    <p>sed matthis numet</p>
                 </div>
-                <div class="buttons">
-                    <button>Popular</button>
-                    <h3>Popular Tags</h3>
-                    <p>Travel, New York, Dinner, Salmon, France, Drinks</p>
-                </div>
+            </div>
+            <p></p>
+        </div>
+        <div class="three">
+            <h1>POPULAR TAGS</h1>
+            <div class="tags">
+                <p>Travel</p>
+                <p>Travel</p>
+                <p>Travel</p>
+                <p>Travel</p>
+                <p>Travel</p>
+                <p>Travel</p>
+                <p>Travel</p>
             </div>
         </div>
     </footer>
