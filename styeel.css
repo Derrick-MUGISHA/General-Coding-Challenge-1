@@ -1,58 +1,66 @@
-/* /* Global Styles 
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  } */
+}
 
-  body {
-    font-family: Arial, sans-serif;
+body {
+    font-family: Karma, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the entire navbar */
     align-items: center;
-    padding: 10px 10px 10px 50px;
+    padding: 10px;
     background-color: white;
     position: fixed;
     top: 0;
-    width:1200px;
-   
-    
-   
-}
-section{
-    margin-top: 10%;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a slight shadow */
 }
 
-.menu-toggle{
-font-size: 24px;
+.navbar > * {
+    display: flex;
+    align-items: center;
+    margin: 0 15px; /* Space between navbar items */
 }
 
-.food, .mail-link {
+.menu-toggle {
     font-size: 24px;
+    cursor: pointer;
+    margin-right: auto; /* Pushes other items to the right */
+}
+
+.food {
+    font-size: 24px;
+    margin: 0 auto; /* Center the title */
 }
 
 .mail-link {
     text-decoration: none;
     color: #333;
     font-size: 18px;
+    margin-left: auto; /* Pushes mail to the far right */
 }
 
+/* Adjust main content to account for fixed navbar */
 .main {
+    margin-top: 60px; /* Adjust based on navbar height */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 20px;
-  
 }
 
+/* Rest of the CSS remains the same as in your original stylesheet */
 .post {
     text-align: center;
     padding: 2%;
-    
 }
 
 .post img {
@@ -105,6 +113,14 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+}
+
+.footer-content h2 {
+    font-size: 24px;
+    line-height: 36px;
+    display: block;
+    box-sizing: border-box;
+    margin: 10px 0 10px 0;
 }
 
 .footer-links {

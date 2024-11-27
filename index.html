@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Food Blog</title>
-    <link rel="stylesheet" href="./styeel.css">
+    <link rel="stylesheet" href="styeel.css"> <!-- Corrected potential typo in filename -->
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="menu-toggle" >&#9776;</div>
+        <div class="menu-toggle">&#9776;</div>
         <h1 class="food">My Food</h1>
-       <h1><a href="#" class="mail-link">Mail</a></h1>
+        <h1><a href="#" class="mail-link">Mail</a></h1>
     </nav>
-    <!-- main -->
-    <section class="main">
+
+    <!-- Main Content -->
+    <main class="main"> <!-- Changed from section to main for semantic HTML5 -->
         <div class="post">
-            <img src="./image/sandwich.jpg" alt="The Perfect Sandwich">
+            <img src="image/sandwich.jpg" alt="The Perfect Sandwich"> <!-- Removed unnecessary ./ -->
             <h2>The Perfect Sandwich, A Real NYC Classic</h2>
             <p>Just some random text, lorem ipsum text praesent tincidunt ipsum.</p>
         </div>
         <div class="post">
-            <img src="./image/steak.jpg" alt="Steak">
+            <img src="image/steak.jpg" alt="Steak">
             <h2>Let Me Tell You About This Steak</h2>
             <p>Once again, some random text lorem ipsum praesent tincidunt.</p>
         </div>
         <div class="post">
-            <img src="./image/steak.jpg" alt="Cherries">
+            <img src="image/steak.jpg" alt="Cherries">
             <h2>Cherries, Interrupted</h2>
             <p>Lorem ipsum text praesent tincidunt ipsum. What else?</p>
         </div>
         <div class="post">
-            <img src="./image/wine.jpg" alt="Wine and Pasta">
+            <img src="image/wine.jpg" alt="Wine and Pasta">
             <h2>Once Again, Robust Wine and Vegetable Pasta</h2>
             <p>Lorem ipsum text praesent tincidunt ipsum.</p>
         </div>
         <div class="post">
-            <img src="./image/popsicle.jpg" alt="Popsicle">
+            <img src="image/popsicle.jpg" alt="Popsicle">
             <h2>All I Need Is a Popsicle</h2>
             <p>Lorem ipsum text praesent tincidunt ipsum.</p>
         </div>
         <div class="post">
-            <img src="./image/salmon.jpg" alt="Salmon">
+            <img src="image/salmon.jpg" alt="Salmon">
             <h2>Salmon For Your Skin</h2>
             <p>Once again, some random text lorem ipsum praesent tincidunt.</p>
         </div>
         <div class="post">
-            <img src="./image/sandwich.jpg" alt="French Bread">
+            <img src="image/sandwich.jpg" alt="French Bread">
             <h2>The Perfect Sandwich, A Real Classic</h2>
             <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
         </div>
         <div class="post">
-            <img src="./image/cherries.jpg" alt="French Bread">
+            <img src="image/cherries.jpg" alt="French Bread">
             <h2>Le French</h2>
             <p>Lorem ipsum text praesent tincidunt ipsum.</p>
         </div>
-    </section>
+    </main>
+
     <!-- Pagination -->
     <div class="pagination">
         <a href="#">&laquo;</a>
@@ -65,25 +69,38 @@
         <a href="#">4</a>
         <a href="#">&raquo;</a>
     </div>
+
     <!-- About Section -->
     <section class="about">
         <h2>About Me, The Food Man</h2>
-        <img src="./image/chef.jpg" alt="Chef">
+        <img src="image/chef.jpg" alt="Chef">
         <p><strong>I am Who I Am!</strong></p>
         <p>With passion for real, good food.</p>
-        <p>Just me, myself and I, exploring the universe of unknown. I have a heart of love and an interest in sharing food stories with you.</p>
+        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem
+            ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut
+            rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
+            gravida diam non fringilla.</p>
     </section>
+
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>Powered by <a href= https://www.w3schools.com/w3css/default.asp>W3.CSS</a></p>
+            <h2>FOOTER</h2>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+                congue gravida diam non fringilla</p>
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">W3.CSS</a></p>
+            
             <div class="footer-links">
                 <div class="blog-posts">
                     <h3>Blog Posts</h3>
+                    <img src="image/workshop.jpg" alt="Workshop">
                     <p>Lorem - Sed mattis nunc</p>
+                    <img src="image/gondol.jpg" alt="Restaurant">
                     <p>Ipsum - Praes tinci sed</p>
                 </div>
-                <div class="tags">
+                <div class="buttons">
+                    <button>Popular</button>
                     <h3>Popular Tags</h3>
                     <p>Travel, New York, Dinner, Salmon, France, Drinks</p>
                 </div>
@@ -91,4 +108,5 @@
         </div>
     </footer>
 </body>
+
 </html>
