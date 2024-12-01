@@ -190,7 +190,8 @@ body {
     text-decoration: none solid rgb(0, 0,0);
     text-align: center;
     /* margin: 10px 0 10px 0; */
-    
+    margin-bottom: 40px;
+    font-weight: 100;
     height: 36px;
     /* width: 1136px; */
     box-sizing: border-box;
