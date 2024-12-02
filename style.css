@@ -9,7 +9,6 @@ body {
     font-family: Karma, sans-serif;
     margin: 0;
     padding: 0;
-    margin: 0 30px 0 30px;
     
 }
 
@@ -53,14 +52,14 @@ body {
 
 /* -------------------Main Content------------------------------ */
 .main {
-    display: flex;
-    /* grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
     /* background-color: blue; */
     font-size: 15px;
     text-align: center;
     padding-top: 100px;
     padding-right: 200px;
-    padding-left: 150px;
+    padding-left: 195px;
 }
 
 .post {
@@ -94,43 +93,7 @@ body {
     height: 35px;
     margin-bottom: 80px;
 }
-.main-2{
-    display: flex;
-    /* grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); */
-    /* background-color: blue; */
-    font-size: 15px;
-    text-align: center;
-    padding-right: 300px;
-    padding-left: 300px;
-}
-.post-2 {
-    text-align: center;
-}
 
-.post-2 img {
-    width: 271.987px;
-    height: 408.888px;
-    display: inline;
-    box-sizing: border-box;
-}
-
-.post-2 h2 {
-    margin: 10px 0;
-    font-size: 20px;
-    text-align: center;
-    height: 50px;
-    display: block;
-    font-family:  Karma, sans-serif;
-    box-sizing: border-box;
-}
-
-.post-2 p {
-    color: #666;
-    font-size: 15px;
-    text-align: center;
-    word-spacing: 0px;
-    height: 35px;
-}
 
 /* -------------------------------------display numbers------------------------------------ */
 .pagination {
@@ -308,9 +271,6 @@ footer {
     align-items: left;
     padding: 3px;
 }
-.child im:hover{
-    color: #f1f1f1;
-}
 .child-2{
     /* background: #b36969; */
     display: flex;
@@ -409,4 +369,18 @@ footer {
     /* min-height: 25px !important; */
     text-align: center;
 }
-
+.two .child:hover img,
+.two .child:hover p,
+.two .child-2:hover img,
+.two .child-2:hover p {
+    background-color: #171717; /* Example hover effect */
+    border-radius: 5px;       /* Example border-radius */
+    color: white;             /* Change text color */
+    transition: all 0.3s ease; /* Smooth animation */
+}
+/* .two:hover img,
+.two:hover p {
+    background-color: #171717; /* Example background color */
+    color: white;             /* Change text color for <p> */
+    transition: all 0.3s ease; /* Smooth hover animation */
+} */
